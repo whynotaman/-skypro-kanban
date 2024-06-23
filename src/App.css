@@ -184,7 +184,7 @@ body {
   justify-content: center;
 }
 .pop-exit__exit-no {
-  width: 153px;
+  width: 163px;
   height: 30px;
   background-color: transparent;
   border-radius: 4px;
@@ -385,7 +385,7 @@ body {
   height: 200px;
 }
 .form-new__create {
-  width: 132px;
+  width: 138px;
   height: 30px;
   background-color: #565eef;
   border-radius: 4px;
@@ -748,7 +748,7 @@ body {
   justify-content: center;
 }
 .header__btn-main-new {
-  width: 178px;
+  width: 184px;
   height: 30px;
   border-radius: 4px;
   background-color: #565eef;
