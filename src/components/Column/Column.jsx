@@ -1,38 +1,17 @@
+import { statusList } from "../../data.js";
 import Card from "../Card/Card.jsx";
 
 function Column() {
   return (
     <>
-      <div className="main__column column">
-        <div className="column__title">
-          <p>Без статуса</p>
+      {statusList.map((status) => (
+        <div className="column__title" key={status}>
+          <div className="main__column column">
+            <p>{status}</p>
+          </div>
+          <Card />
         </div>
-        <Card />
-      </div>
-      <div className="main__column">
-        <div className="column__title">
-          <p>Нужно сделать</p>
-        </div>
-        <Card />
-      </div>
-      <div className="main__column">
-        <div className="column__title">
-          <p>В работе</p>
-        </div>
-        <Card />
-      </div>
-      <div className="main__column">
-        <div className="column__title">
-          <p>Тестирование</p>
-        </div>
-        <Card />
-      </div>
-      <div className="main__column">
-        <div className="column__title">
-          <p>Готово</p>
-        </div>
-        <Card />
-      </div>
+      ))}
     </>
   );
 }
