@@ -1,26 +1,42 @@
+import * as S from "./Card.styled.js";
+
 function Card({ topic, title, date }) {
+  let color;
+  switch (topic) {
+    case "Web Design":
+      color = "_orange";
+      break;
+    case "Copywriting":
+      color = "_purple";
+      break;
+    case "Research":
+      color = "_green";
+      break;
+    default:
+      color = "_gray";
+  }
   return (
     <>
-      <div className="cards">
-        <div className="cards__item" key="1">
-          <div className="cards__card card">
-            <div className="card__group">
-              <div className="card__theme _green">
-                <p className="_green">{topic}</p>
-              </div>
+      <S.Card>
+        <S.CardItem>
+          <S.CardsCard>
+            <S.CardGroup>
+              <S.CardTheme $color={color}>
+                <p>{topic}</p>
+              </S.CardTheme>
               <a href="#popBrowse" target="_self">
-                <div className="card__btn">
+                <S.CardBtn>
                   <div />
                   <div />
                   <div />
-                </div>
+                </S.CardBtn>
               </a>
-            </div>
-            <div className="card__content">
+            </S.CardGroup>
+            <S.CardContent>
               <a href="" target="_blank">
-                <h3 className="card__title">{title}</h3>
+                <S.CardTitle>{title}</S.CardTitle>
               </a>
-              <div className="card__date">
+              <S.CardDate>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={13}
@@ -50,11 +66,11 @@ function Card({ topic, title, date }) {
                   </defs>
                 </svg>
                 <p>{date}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+              </S.CardDate>
+            </S.CardContent>
+          </S.CardsCard>
+        </S.CardItem>
+      </S.Card>
     </>
   );
 }
