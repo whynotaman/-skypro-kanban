@@ -1,5 +1,3 @@
-
-
 export const cardList = [
   {
     id: 1,
@@ -32,12 +30,11 @@ export const cardList = [
   {
     id: 5,
     topic: "Test",
-    title: "Название задачи",
+    title: "ПРОВЕРКА",
     date: "07.07.24",
     status: "Готово",
   },
 ];
-
 
 export const statusList = [
   "Без статуса",

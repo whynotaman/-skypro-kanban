@@ -1,17 +1,21 @@
-import { statusList } from "../../data.js";
 import Card from "../Card/Card.jsx";
 
-function Column() {
+function Column({ status, cards }) {
   return (
     <>
-      {statusList.map((status) => (
-        <div className="column__title" key={status}>
-          <div className="main__column column">
-            <p>{status}</p>
-          </div>
-          <Card />
+      <div className="main__column">
+        <div className="column__title">
+          <p>{status}</p>
         </div>
-      ))}
+        {cards.map((card) => (
+          <Card
+            key={card.id}
+            topic={card.topic}
+            title={card.title}
+            date={card.date}
+          />
+        ))}
+      </div>
     </>
   );
 }
