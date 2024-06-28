@@ -34,7 +34,7 @@ export const HeaderNav = styled.nav`
 `;
 
 export const HeaderBtn = styled.button`
-  width: 178px;
+  width: 184px;
   height: 30px;
   border-radius: 4px;
   background-color: #565eef;

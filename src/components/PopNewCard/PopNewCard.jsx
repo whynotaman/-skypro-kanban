@@ -3,7 +3,6 @@ import Calendar from "../Calendar/Calendar.jsx";
 function PopNewCard() {
   return (
     <>
-      {" "}
       <div className="pop-new-card" id="popNewCard">
         <div className="pop-new-card__container">
           <div className="pop-new-card__block">

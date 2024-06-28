@@ -1,13 +1,27 @@
 import * as S from "./Card.styled.js";
 
 function Card({ topic, title, date }) {
+  let color;
+  switch (topic) {
+    case "Web Design":
+      color = "_orange";
+      break;
+    case "Copywriting":
+      color = "_purple";
+      break;
+    case "Research":
+      color = "_green";
+      break;
+    default:
+      color = "_gray";
+  }
   return (
     <>
       <S.Card>
         <S.CardItem>
           <S.CardsCard>
             <S.CardGroup>
-              <S.CardTheme>
+              <S.CardTheme $color={color}>
                 <p>{topic}</p>
               </S.CardTheme>
               <a href="#popBrowse" target="_self">

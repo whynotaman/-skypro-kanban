@@ -12,13 +12,13 @@ function Header({ addNewCard }) {
         <Container>
           <S.HeaderBlock>
             <S.HeaderLogo>
-              <a href="" target="_self">
-                <img src="../logo.png" alt="logo" />
+              <a href="#" target="_self">
+                <img src="../../logo.png" alt="logo" />
               </a>
             </S.HeaderLogo>
             <div className="header__logo _dark">
-              <a href="" target="_self">
-                <img src="../logo_dark.png" alt="logo" />
+              <a href="#" target="_self">
+                <img src="../../logo_dark.png" alt="logo" />
               </a>
             </div>
             <S.HeaderNav>
