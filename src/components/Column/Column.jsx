@@ -8,14 +8,16 @@ function Column({ status, cards }) {
         <S.ColumnTitle>
           <p>{status}</p>
         </S.ColumnTitle>
-        {cards.map((card) => (
-          <Card
-            key={card.id}
-            topic={card.topic}
-            title={card.title}
-            date={card.date}
-          />
-        ))}
+        <S.Cards>
+          {cards.map((card) => (
+            <Card
+              key={card.id}
+              topic={card.topic}
+              title={card.title}
+              date={card.date}
+            />
+          ))}
+        </S.Cards>
       </S.MainColumn>
     </>
   );
